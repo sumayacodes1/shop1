@@ -1,0 +1,189 @@
+body{
+  background: linear-gradient(rgb(207, 235, 254), rgb(200, 251, 250), rgb(136, 183, 234));
+  font-family: 'Poopins', sans-serif;;
+  color: black;
+ }
+
+ nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: -3px -3%;
+  border-bottom: 1px solid black;
+  z-index: 10;
+  font-size: 16px;
+  background-color: white;
+}
+
+nav ul li{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  display: inline-block;
+  margin: 2px 2px;
+  font-weight: 500;
+}
+
+li:hover{
+  color: rgb(210, 88, 18);
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+#nav-button{
+  background-color: rgb(228, 97, 21);
+  color: white;
+  font-size: 14px;
+  padding: 8px;
+  border: 0;
+  border-radius: 40px;
+}
+#nav-button:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+nav .logo{
+  width: 50px;
+}
+.a-button{
+  text-decoration: none;
+  color: white;
+}
+.a-button:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.a-links{
+  text-decoration: none;
+  color: black;
+}
+.a-links:hover{
+  color: rgb(210, 88, 18);
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.active-page{
+  text-decoration: underline;
+  color: rgb(210, 88, 18);
+}
+img{
+  width: 100px;
+  height: 100px;
+  display: block;
+  float: left;
+}
+
+
+.footer {
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 1px;
+
+}
+
+#form-Container{
+  display: none;
+
+}
+
+legend::after {
+  content: "*";
+  color: red;
+}
+
+label::after {
+  content:"*";
+  color: red;
+}
+
+#product-Card {
+  background: rgb(210, 88, 18);
+  border-radius: 12px;
+  margin: 50px;
+  width: 400px;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+
+
+.Product img{
+  background: (210, 88, 18);
+  width: 140px;
+  height: auto;
+  margin: auto;
+  border-radius: 6px;
+  max-width: 150px;
+}
+
+
+
+.Cart{
+    background: rgb(210, 88, 18);
+    border-radius: 12px;
+    width: 100px;
+    right: 20px;
+    position: fixed;
+    max-width: 150px;
+    top: 100px;
+}
+
+#Product-Container{
+  background: rgb(210, 88, 18);
+  border-radius: 10px;
+  max-width: 400px;
+}
+#Product-Container2{
+  background: rgb(210, 88, 18);
+  border-radius: 10px;
+  max-width: 400px;
+}
+#Product-Container3{
+  background: rgb(210, 88, 18);
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+#Product-Container4{
+  background: rgb(210, 88, 18);
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+#Product-Container5{
+  background: rgb(210, 88, 18);
+  border-radius: 10px;
+  max-width: 400px;
+}
+h1,h6{
+  text-align: center;
+}
+
+
+.footer1 {
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 1px;
+
+}
+
+form{
+  background: rgb(210, 88, 18);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}

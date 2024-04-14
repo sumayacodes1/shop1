@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+  <nav>
+      <img src="ImagesforCW/logo.png" alt="logo">
+      <ul>
+          <li class="home.html"><a href="https://w1973224.users.ecs.westminster.ac.uk/CWK/home.html" class="a-links">Home</a></li>
+          <li><a href="shop.html" class="Shop">Shop</a></li>
+          <li><a href="gallery.html" class="a-links">Gallery</a></li>
+          <li><a href="team.html" class="a-links">Team</a></li>
+          <li class="ContentPage.html"><a href="https://w1853023.users.ecs.westminster.ac.uk/ALR11/ContentPage.html">Content Page</a></li>
+      </ul>
+      <a href="feedback.html" class="a-button" id="nav-button"><b>Feedback</b></a>
+  </nav>
+  <br> <br> <br> <br><br> <br> <br>
+
+<div id="Product-Container">
+    <div class="product-card">
+        <img src="ImagesforCW/ReusableWaterBottle.jpg" alt="Reusable Water Bottle">
+        <h3>Reusable Water Bottle</h3>
+        <p>£3</p>
+        <p>Stay hydrated and drink your water</p>
+        <input type="number" id="nbWaterBottle">
+        <input type="text" id="totalWaterBottlePrice">
+<input type="button" value="AddToCart" id="addtoCartWaterBottle">
+    </div>
+    </div>
+    <br>
+
+<div id="Product-Container2">
+    <div class="card">
+        <img src="ImagesforCW/Totebag.jpeg" alt="Reusable Tote Bag">
+        <h3>Reusable Tote Bag</h3>
+        <h4>£4</h4>
+        <p>Simple but handy Tote Bag</p>
+        <input type="number" id="nbToteBag">
+        <input type="text" id="totalToteBagPrice">
+<input type="button" value="AddToCart" id="addtoCartToteBag">
+    </div>
+    </div>
+
+<div id="Product-Container3">
+
+    <div class="product-card">
+        <img src="ImagesforCW/TheOddFish.jpeg" alt="Notebook">
+        <h3>Children's book</h3>
+        <p>Children's fiction book about our sea</p>
+        <h4>£3</h4>
+      <input type="number" id="nbNoteBook">
+          <input type="text" id="totalNoteBookPrice">
+<input type="button" value="AddtoCart" id="addtoCartNoteBook">
+
+</div>
+</div>
+
+<div id="Product-Container4">
+    <div class="product-card">
+        <img src="ImagesforCW/CompostBin.webp" alt="Compost Bin">
+        <h3>Compost Bin</h3>
+        <p>Go organic for our planet</p>
+        <h4>£5</h4>
+        <input type="number" id="nbCompostBin">
+        <input type="text" id="totalCompostPrice">
+<input type="button" value="AddToCart" id="addtoCo">
+    </div>
+</div>
+    <br> <br> <br> <br>
+
+    <div id="Product-Container5">
+    <div class="Cart">
+        <h3>Your Basket</h3>
+        <div id="cartItems"></div>
+        <h3>Total</h3>
+        <div id="total">£0.00</div>
+        <label for="CartName">Name</label>
+        <input type="text" id="CartName">
+        <label for="CartEmail">Email Address</label>
+        <input type="text" id=CartEmail>
+        <br>
+      <button onclick="clearCart()">Clear Basket</button>
+     </div>
+</div>
+<button onclick="myFunction()">Go To Checkout</button>
+
+
+
+
+<div id="form-Container" class="hidden">
+      <h1>Almost there..</h1>
+    <h6>Fill in the details below to complete your purchase</h6>
+    <br>
+        <br>
+        <form>
+            <fieldset>
+                <legend>Payment Details</legend>
+                <label for="CardNumber">Card Number</label>
+                <br>
+
+                <input type="text" name="CardNumber" id="CardNumber">
+                <br>
+                <label for="CardholderName">Cardholder Name</label>
+                <br>
+                <input type="text" name="CardholderName" id="CardholderName">
+                <br>
+                <label for="ExpiryDate">Expiry Date</label>
+                <br>
+                <input type="text" name="ExpiryDate" id="ExpiryDate">
+                <br>
+                <label for="CCV">CCV</label>
+                <br>
+                <input type="text" name="CCV" id="CCV">
+                <br>
+                <input type="button" Value="Submit" onclick="showAndClearField(this.form)">
+                <input type="button" Value="SaveChanges" onclick="SaveChanges(this.form)">
+                <input type="button" Value="ClearFields" onclick="ClearFields(this.form)">
+
+            </fieldset>
+        </form>
+<br> <br>
+        <form>
+            <fieldset>
+                <legend>Billing Address</legend>
+                <label for="AddressLine1">Address Line 1</label>
+                <br>
+                <input type="text" name="AddressLine1" id="AddressLine1">
+                <br>
+                <label for="AddressLine2">Address Line 2</label>
+                <br>
+                <input type="text" name="AddressLine2" id="AddressLine2">
+                <br>
+                <label for="AddressLine3">Address Line 3</label>
+                <br>
+                <input type="text" name="AddressLine3" id="AddressLine3">
+                <br>
+                <label for="Town/City">Town/City</label>
+                <br>
+                <input type="text" name="Town/City" id="Town/City">
+                <br>
+                <label for="State/County">State/County</label>
+                <br>
+                <input type="text" name="State/County" id="State/County">
+                <br>
+                <label for="PostcodeZip">PostCode/Zip code</label>
+                <br>
+                <input type="text" name="PostcodeZip" id="PostcodeZip">
+                <br>
+                <label for="Country">Country</label>
+                <br>
+                <select id="Country">
+                    <option>Select from list</option>
+                    <option>United Kingdom</option>
+                    <option>United States</option>
+                </select>
+              <br>
+              <br>
+              <input type="button" Value="Submit" onclick="showAndClearField(this.form)">
+              <input type="button" Value="SaveChanges" onclick="SaveChanges(this.form)">
+              <input type="button" Value="ClearFields" onclick="ClearFields(this.form)">
+
+
+            </fieldset>
+        </form>
+<br> <br>
+        <form>
+            <fieldset>
+                <legend>Contact Details</legend>
+                <p>Edit Contact Details</p>
+                <label for="FirstName">First Name</label>
+                <br>
+                <input type="text" name="FirstName"  id="FirstName">
+                <br>
+                <label for="Surname">Surname</label>
+                <br>
+                <input type="text" name="Surname" id="Surname" required>
+                <br>
+                <label for="PhoneNumber">Phone Number</label>
+                <br>
+                <input type="text" name="PhoneNumber" id="PhoneNumber">
+                <br>
+                <label for="EmailAddress">Email Address</label>
+                <br>
+                <input type="text" name="EmailAddress" id="EmailAddress" required>
+                <br>
+                <input type="button" Value="Submit" onclick="showAndClearField(this.form)">
+                <input type="button" Value="SaveChanges" onclick="SaveChanges(this.form)">
+                <input type="button" Value="ClearFields" onclick="ClearFields(this.form)">
+             </fieldset>
+              </form>
+
+
+<br> <br>
+    <div>
+        <h4>Order Summary</h4>
+        <p>Refrence</p>
+        <p>Order items</p>
+        <button type="button">Reset Form</button>
+        <button onclick="MakePayment()">Make Payment</button>
+</div>
+
+<div class="footer1">
+    <p><a href="https://w1853023.users.ecs.westminster.ac.uk/ALR11/PageEditor.html">Page Editor</a></p>
+    </div>
+    </div>
+
+<script>
+var nbWaterBottle = 0;
+var totalWaterBottlePrice;
+document.getElementById("nbWaterBottle").addEventListener("change", function(){
+  nbWaterBottle = document.getElementById("nbWaterBottle").value;
+  totalWaterBottlePrice = parseInt(nbWaterBottle) * 10;
+  document.getElementById("totalWaterBottlePrice").value = totalWaterBottlePrice;
+  document.getElementById("WaterbottleOrdered").innerHTML = nbWaterBottle;
+  document.getElementById("totalWaterBottlePrice").innerHTML = totalWaterBottlePrice;
+});
+var nbToteBag = 0;
+var totalToteBagPrice;
+document.getElementById("nbToteBag").addEventListener("change", function(){
+  nbToteBag = document.getElementById("nbToteBag").value;
+  totalToteBagPrice = parseInt(nbToteBag) * 10;
+  document.getElementById("totalToteBagPrice").value = totalToteBagPrice;
+  document.getElementById("ToteBagOrdered").innerHTML = nbToteBag;
+  document.getElementById("totalToteBagPrice").innerHTML = totalToteBagPrice;
+});
+
+var nbNoteBook = 0;
+var totalNoteBookPrice;
+
+document.getElementById("nbNoteBook").addEventListener("change", function(){
+  nbNoteBook = document.getElementById("nbNoteBook").value;
+  totalNoteBookPrice = parseInt(nbNoteBook) * 10;
+  document.getElementById("totalNoteBookPrice").value = totalNoteBookPrice;
+  document.getElementById("NoteBookOrdered").innerHTML = nbNoteBook;
+  document.getElementById("totalNoteBookPrice").innerHTML = totalNoteBookPrice;
+});
+
+
+var nbCompostBin= 0;
+var totalCompostPrice;
+document.getElementById("nbCompostBin").addEventListener("change", function(){
+  nbCompostBin = document.getElementById("nbCompostBin").value;
+totalCompostPrice = parseInt(nbCompostBin) * 10;
+  document.getElementById("totalCompostPrice").value = totalCompostPrice;
+  document.getElementById("CompostBinOrdered").innerHTML = nbCompostBin;
+  document.getElementById("totalCompostPrice").innerHTML = totalCompostPrice;
+});
+
+function myFunction() {
+    var x = document.getElementById("form-Container");
+    if (x.style.display === "none" || x.style.display === "") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function MakePayment() {
+    alert("Thank you for shopping with us! :)");
+}
+
+document.getElementById("addWaterBottle").addEventListener("click", function() {
+    addToCart("Reusable Water Bottle", 1, 10);
+});
+
+function showAndClearField(frm){
+    if (frm.firstName.value == "")
+        alert("Hey! You didn't enter anything!")
+    else
+        alert("The field contains the text: " + frm.firstName.value)
+    frm.firstName.value = ""
+}
+
+function SaveChanges(frm){
+    alert("Changes saved!")
+    frm.reset();
+}
+
+function ClearFields(frm){
+    frm.reset();
+}
+
+function toggleForm() {
+    var x = document.getElementById("form-Container");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
